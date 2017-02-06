@@ -512,7 +512,7 @@ def main(as_module=False):
 
         # This module is always executed as "python -m flask.run" and as such
         # we need to ensure that we restore the actual command line so that
-        # the reloader can properly operate.
+        # the reloader can properly operate. ok
         sys.argv = ['-m', this_module] + sys.argv[1:]
     else:
         name = None
